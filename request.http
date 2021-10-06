@@ -1,0 +1,9 @@
+@api = http://localhost:3000/api
+@token =  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJXaWxzb24iLCJpYXQiOjE2MzM0OTE3Mjl9.aQdwpcVOFssrbNcVgbHEY39c0aiPlOS92VWs4WExX5E
+###
+GET {{api}}/login
+
+###
+GET {{api}}/user
+Content-Type: application/json
+Authorization: Bearer {{token}}
